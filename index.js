@@ -10,7 +10,7 @@ const cors = require('cors');
 dotenv.config();
 
 // Uncomment these when you create your route files
-// const apiRouter = require('./route/apiRoutes.js');
+const apiRouter = require('./route/apiRoutes.js');
 // const viewRouter = require('./route/viewRoutes.js');
 
 const app = express();
@@ -29,7 +29,7 @@ app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 
 // Uncomment these when you create your route files
-// app.use('/api', apiRouter);
+app.use('/api', apiRouter);
 // app.use('/', viewRouter);
 
 // Basic test route
