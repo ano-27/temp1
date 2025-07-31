@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Temp1</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        {{!-- {{> sidebar}} --}}
+        <main>
+            {{{body}}}
+        </main>
+    </div>
+    
+    {{> footer}}
+
+    <script>
+
+        // Menu
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle auth UI
+            // Toggle dropdown menu
+            const menuToggle = document.getElementById('menuToggle');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+
+            if (menuToggle && dropdownMenu) {
+                menuToggle.addEventListener('click', function () {
+                    dropdownMenu.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

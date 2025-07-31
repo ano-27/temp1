@@ -11,7 +11,7 @@ dotenv.config();
 
 // Uncomment these when you create your route files
 const apiRouter = require('./route/apiRoutes.js');
-// const viewRouter = require('./route/viewRoutes.js');
+const viewRouter = require('./route/viewRoutes.js');
 
 const app = express();
 
@@ -30,7 +30,7 @@ app.set('view engine', 'handlebars');
 
 // Uncomment these when you create your route files
 app.use('/api', apiRouter);
-// app.use('/', viewRouter);
+app.use('/', viewRouter);
 
 // Basic test route
 app.get('/', (req, res) => {
