@@ -1,0 +1,42 @@
+distribution_centers:
+
+id	name	latitude	longitude
+1	Memphis TN	35.1174	-89.9711
+
+
+
+
+inventory_items:
+
+id	product_id	created_at	sold_at	cost	product_category	product_name	product_brand	product_retail_price	product_department	product_sku	product_distribution_center_id
+67971	13844	2022-07-02 07:09:20+00:00	2022-07-24 06:33:20+00:00	2.76803989761885	Accessories	(ONE) 1 Satin Headband	Funny Girl Designs	6.98999977111816	Women	2A3E953A5E3D81E67945BCE5519F84C8	7
+
+
+
+
+order_items:
+
+id	order_id	user_id	product_id	inventory_item_id	status	created_at	shipped_at	delivered_at	returned_at	sale_price
+152013	104663	83582	14235	410368	Cancelled	2023-05-07 06:08:40+00:00				0.0199999995529651
+
+
+
+
+orders:
+
+order_id	user_id	status	gender	created_at	returned_at	shipped_at	delivered_at	num_of_item
+8	5	Cancelled	F	2022-10-20 10:03:00+00:00				3
+
+
+
+
+products:
+
+id	cost	category	name	brand	retail_price	department	sku	distribution_center_id
+13842	2.51874999084976	Accessories	Low Profile Dyed Cotton Twill Cap - Navy W39S55D	MG	6.25	Women	EBD58B8A3F1D72F4206201DA62FB1204	1
+
+
+
+users:
+id	first_name	last_name	email	age	gender	state	street_address	postal_code	city	country	latitude	longitude	traffic_source	created_at
+457	Timothy	Bush	timothybush@example.net	65	M	Acre	87620 Johnson Hills	69917-400	Rio Branco	Brasil	-9.945567619	-67.83560991	Search	2022-07-19 13:51:00+00:00
